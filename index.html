@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Task</title>
+    <link
+      rel="stylesheet"
+      href="node_modules\bootstrap\dist\css\bootstrap.css"
+    />
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="d-flex align-content-between">
+        <h2>Task</h2>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Normal link</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Dropdown Button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Popperjs</a>
+                  <a class="dropdown-item" href="#">Must be</a>
+                  <a class="dropdown-item" href="#">Included to use</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Search"
+          />
+          <button type="button" class="btn btn-light">Light</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="col" style="height: 170px">
+            <div class="box bg-danger"></div>
+            <div class="box bg-secondary"></div>
+            <div class="box bg-secondary"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
